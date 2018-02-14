@@ -1,0 +1,35 @@
+<%= render 'header' %>
+
+<div class="container-fluid bg-image">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Pour vous amuser...</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+    </div>
+
+    <div class="col-sm-4 bg-red padding40">
+	  	<h3>S'inscrire</h3>
+      <br />
+      <p class="form"><Sign up:></p>
+          <%= form_for @user do |f| %>
+          <p class="form">Nom :   <%= f.text_field :name %></p>
+          <p class="form">Prénom : <%= f.text_field :firstname %></p>
+          <p class="form">Email :  <%= f.text_field :email %></p>
+          <p class="formButton"><%= f.submit "Inscription" %></p>
+        <% end %>
+    </div>
+
+	  <div class="col-sm-4">
+	  </div>
+
+    <div class="col-sm-12">
+      <br />
+      <br />
+    </div>
+
+	</div>
+
+</div>
